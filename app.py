@@ -29,7 +29,6 @@ def get_servers():
 
     return servers
 
-
 def send_telegram(servers):
     text = "Dlix EPYС:\n\n" + "\n".join(
         f"{server['name']} : {server['price']}" for server in servers
